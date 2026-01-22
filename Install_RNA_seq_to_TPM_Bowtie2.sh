@@ -3,10 +3,12 @@
 # Configuration
 REPO_URL="https://github.com/euchrogene/AdapterRemoval_bowtie2_RSEM.git"
 REPO_DIR="AdapterRemoval_bowtie2_RSEM"
+EXE_FILE="RNA_seq_to_TPM_Bowtie2"
+PIPELINE_ENTRY="$EXE_FILE => A pipeline to process RNA-seqs to get TPM, FPKM, and Count data using AdapterRemoval=>Bowtie2=>RSEM"
+
 TARGET_BIN="/usr/bin"
 DATA_FILE="/usr/share/euchrogene_pipelines.txt"
 VIEWER_SCRIPT="$TARGET_BIN/pipelines"
-PIPELINE_ENTRY="RNA-seq_AdapterRemoval_RSEM => A pipeline to process RNA-seqs to get TPM, FPKM, and Count data"
 
 echo "Step 1: Downloading repository..."
 # Clean up any previous failed attempts first
@@ -26,7 +28,7 @@ echo "Step 5: Updating the pipeline text database..."
 sudo touch "$DATA_FILE"
 
 # Add entry if it doesn't exist
-if ! grep -q "RNA-seq_AdapterRemoval_RSEM" "$DATA_FILE"; then
+if ! grep -q "$EXE_FILE" "$DATA_FILE"; then
     echo "$PIPELINE_ENTRY" | sudo tee -a "$DATA_FILE" > /dev/null
 fi
 
