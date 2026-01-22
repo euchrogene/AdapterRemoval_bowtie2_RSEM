@@ -4,12 +4,12 @@ To install:
 
 1. get the installation file:
 ```
-wget https://github.com/euchrogene/AdapterRemoval_bowtie2_RSEM/blob/main/Install_RNA-seq_AdapterRemofal_RSEM.sh
+wget https://github.com/euchrogene/RNA-seq_to_TPM_Bowtie2/raw/refs/heads/main/Install_RNA_seq_to_TPM_Bowtie2.sh
 ```
 
 2. install the pipeline:
 ```
-sudo bash Install_RNA-seq_AdapterRemofal_RSEM.sh
+sudo bash Install_RNA_seq_to_TPM_Bowtie2.sh
 ```
 
 3. check installation
