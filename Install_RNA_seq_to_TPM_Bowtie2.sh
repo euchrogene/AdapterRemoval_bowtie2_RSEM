@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Configuration
-REPO_URL="https://github.com/euchrogene/AdapterRemoval_bowtie2_RSEM.git"
-REPO_DIR="AdapterRemoval_bowtie2_RSEM"
+REPO_URL="https://github.com/euchrogene/RNA-seq_to_TPM_Bowtie2.git"
+REPO_DIR="RNA-seq_to_TPM_Bowtie2"
 EXE_FILE="RNA_seq_to_TPM_Bowtie2"
 PIPELINE_ENTRY="$EXE_FILE => A pipeline to process RNA-seqs to get TPM, FPKM, and Count data using AdapterRemoval=>Bowtie2=>RSEM"
 
@@ -46,5 +46,8 @@ EOF"
 
 sudo chmod +x "$VIEWER_SCRIPT"
 
+echo ""
 echo "Success! Installation complete and temporary files removed."
-echo "If you wnat delete the pipeline list not used anymore, open the file in /usr/share/euchrogene_pipelines.txt and revise it."
+echo ""
+echo "If you want to delete the pipeline list not used anymore, open the file in /usr/share/euchrogene_pipelines.txt and revise it."
+
