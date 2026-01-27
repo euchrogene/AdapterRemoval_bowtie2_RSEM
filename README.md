@@ -20,11 +20,11 @@ sudo bash Install_RNA_seq_to_TPM_Bowtie2.sh
 rm Install_RNA_seq_to_TPM_Bowtie2.sh
 ```
 
-3. display installed pipelines (or software)
+2. display installed software
 ```
 eg-tools
 ```
-4. show help contents
+3. show help contents
 ```
 RNA_seq_to_TPM_Bowtie2 
 ```
