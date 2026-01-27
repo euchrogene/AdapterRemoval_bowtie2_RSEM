@@ -22,7 +22,7 @@ rm Install_RNA_seq_to_TPM_Bowtie2.sh
 
 2. display installed software
 ```
-eg-tools
+EG_tools
 ```
 3. show help contents
 ```
